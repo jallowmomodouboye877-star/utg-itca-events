@@ -1,0 +1,243 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgb(251, 249, 249);
+}
+
+.header {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(3, 3, 32);
+}
+.header h1 {
+    color: violet
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        
+    }
+}
+
+.hero-section {
+    padding-top: 1.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+}
+
+.hero-header {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-des {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+.s-b {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.extra-btn {
+    padding: 10px 15px;
+    background-color: #a4bafc;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .extra-btn {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+.events-section {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.event-header p {
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.events-container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.event {
+    background-color: white;
+    border-radius: 10px;
+    /* padding: 20px 5px; */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.event-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer {
+    
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: rgb(3, 3, 32);
+    color: white;
+    
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.footer-links ul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.social-media-links {
+    margin-left: 30px;
+    gap: 15px;
+    color: white;
+    padding-top: 30px;
+}
+.social-media-links a {
+    padding-left: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    
+    
+}
+
+.end {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .social-media-links {
+        margin-left: 0;
+        padding-top: 20px;
+    }
+}
+
